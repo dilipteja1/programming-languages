@@ -1,4 +1,17 @@
-class Hello
+class Calculator
+{
+    //method overloading 
+    public int add(int n1, int n2)
+    {
+        System.out.println("in add");
+        return 0;
+    }
+    public double add(double n1, double n2)
+    {
+        return n1+n2;
+    }
+}
+public class Hello
 {
     public static void main(String[] args){
         char k = 'a';
@@ -12,5 +25,8 @@ class Hello
         //post increment .First it will assign and then increase
         int result = num++;
         System.err.println(result);
+
+        Calculator calc = new Calculator();
+        calc.add();  
     }
 }
